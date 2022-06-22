@@ -12,6 +12,7 @@ body{
     font-family: var(--font-b-family);
     width: 100%;
 }
+
 :root{
     /* Colors */
     /* primary */
@@ -45,6 +46,10 @@ body{
 
 
 }
+.main_wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
 
 h1,h2{
     /* font-family: var(--font-family); */
@@ -72,8 +77,8 @@ img{
     align-items: center;
 }
 
-.flex > section{
-    /* flex: 1; */
+#section_2{
+    margin-top: 5rem;
 }
 
 .align-start{
@@ -88,7 +93,7 @@ section h2{
 /* HEADER STYLES */
 header{
     background-image: url(/bg-hero-desktop.svg);
-    background-position: center center;
+    background-position:  center;
     background-color: var(--Very-Pale-Cyan);
     background-size: cover;
     padding: 1rem 0;
@@ -133,7 +138,7 @@ header p{
 
 .btn-primary{
     background-color: var(--Pink);
-    color: #fff;
+    
     
 
 }
@@ -146,6 +151,14 @@ header p{
     padding: 60px;
 
 
+}
+.box_margin{
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    margin: 5rem 50px 2rem; 
+    padding: 60px;
 }
 
 .small-box{
@@ -164,9 +177,7 @@ header p{
 }
 
 footer{
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    
     background-color: var(--Very-Dark-Cyan); 
     color: white;
     padding: 150px 65px 150px 60px;
@@ -246,6 +257,7 @@ footer ul li{
 @media screen and (max-width: 768px){
     nav .flex{
         flex-direction: row;
+    }
         .flex{
             flex-direction: columns;
         }
@@ -256,4 +268,153 @@ footer ul li{
         .box-reverse-mobie{
             flex-direction: column-reverse;
         }
-}
+    }
+
+    @media screen and (max-width:550px){
+                
+        h1,h2{
+            text-align: left;
+            font-size: 2rem;
+            font-weight: var(--font-weights-700);
+        }
+
+        .main_wrapper{
+            width: 100%;
+        }
+       header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* text-align: center; */
+       }
+                
+        header nav{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+        header nav img{
+            margin-left:1rem;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .btn{
+            border-radius: 3rem;
+            border: none;
+            background-color: white;
+            font-size: 0.8rem;
+            padding: 1rem 1rem;
+            cursor: pointer;
+            width: 100px;
+           
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        header .flex .content-text{
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+        }
+        
+        
+        .btn-primary{
+            background-color: var(--Pink);
+            width: 200px;
+            color: aliceblue;
+            margin: 1rem auto;
+
+            /* Footer Styles */
+        }  
+        .footer-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+            justify-content: space-evenly;
+            
+
+
+        }
+        .final_info{
+            text-align: left;
+        }
+
+        .small-box{
+            margin: 0 auto;
+            text-align: center;
+            transform: translateY(40%);
+            
+        }
+        
+
+                
+        .box{
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            margin: 2rem auto; 
+            padding: 1rem 1rem;
+            width: 90%;
+            text-align: center;
+
+        }
+
+                    
+            .center{
+                text-align: center;
+            }
+             .container{
+                width: 100%;
+                text-align: center;
+                padding: 2rem 1rem;
+                margin: 0 auto;
+                
+            }
+            
+            .box_margin{
+
+              
+                
+                margin: 5rem 1rem 2rem; 
+                padding: 1rem;
+            }
+            footer{
+                text-align: left;
+            }
+            /* FINAL INFO STYLES */
+
+            footer section section .loc{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin: 1rem 0;
+            }
+          
+            footer section section .email{
+                 margin: 1rem 0;
+               
+            }
+            footer section section p {
+               text-align: left;
+                
+            }
+         
+            footer > p{
+                text-align: center;
+            
+            }
+         .sms ul a {
+             text-align: center;
+         }
+        
+         #sms {
+             margin: 0 auto;
+         }
+        
+    }
