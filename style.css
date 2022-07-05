@@ -92,7 +92,7 @@ section h2{
 }
 /* HEADER STYLES */
 header{
-    background-image: url(/bg-hero-desktop.svg);
+    background-image: url(bg-hero-desktop.svg);
     background-position:  center;
     background-color: var(--Very-Pale-Cyan);
     background-size: cover;
